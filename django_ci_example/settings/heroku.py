@@ -20,3 +20,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# Medhat
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', 'true'))
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+# Medhat
